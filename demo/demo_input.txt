@@ -1,0 +1,15 @@
+tick TSLA 219.27
+subscribe elon.musk TSLA USD
+subscribe bill.gates BMW
+subscribe bill.gates TSLA
+subscribe elon.musk AZN
+tick TSLA 219.5
+unsubscribe bill.gates TSLA
+subscribe bill.gates TSLA GBP
+subscribe bill.gates TSLA EUR
+tick AZN 110.5
+tick GBP 1.25
+tick EUR 0.9
+tick TSLA 220.5
+unsubscribe elon.musk GBP
+quit

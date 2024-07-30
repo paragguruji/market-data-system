@@ -1,0 +1,32 @@
+{
+  "symbols": {
+    "TSLA": {
+      "currency": "USD"
+    },
+    "BMW": {
+      "currency": "EUR"
+    },
+    "AZN": {
+      "currency": "GBP"
+    },
+    "GBP": {
+      "currency": "USD"
+    },
+    "EUR": {
+      "currency": "USD"
+    }
+  },
+  "users": {
+    "elon.musk": [
+      "TSLA",
+      "AZN",
+      "GBP"
+    ],
+    "bill.gates": [
+      "MSFT",
+      "TSLA",
+      "GBP",
+      "EUR"
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "default": {
+      "format": "timestamp=%(asctime)s level=%(levelname)s logger=%(name)s %(message)s"
+    }
+  },
+  "handlers": {
+    "default": {
+      "level": "INFO",
+      "class": "logging.StreamHandler",
+      "formatter": "default",
+      "stream": "ext://sys.stdout"
+    },
+    "stderr": {
+      "level": "WARNING",
+      "class": "logging.StreamHandler",
+      "formatter": "default",
+      "stream": "ext://sys.stderr"
+    },
+    "rotatingFile": {
+      "level": "DEBUG",
+      "class": "logging.handlers.RotatingFileHandler",
+      "formatter": "default",
+      "filename": "market_data_system.log",
+      "maxBytes": 10000000,
+      "backupCount": 10
+    }
+  },
+  "loggers": {
+    "": {
+      "handlers": [
+        "default"
+      ],
+      "level": "INFO",
+      "propagate": false
+    },
+    "MarketDataService": {
+      "handlers": [
+        "rotatingFile",
+        "stderr"
+      ],
+      "level": "DEBUG",
+      "propagate": false
+    }
+  }
+}

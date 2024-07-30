@@ -1,0 +1,1 @@
+python src/app.py data/config.json < 'demo/demo_input.txt' > 'demo/demo_output.log'
